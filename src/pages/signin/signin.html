@@ -1,0 +1,30 @@
+<ion-content class="background">
+	<ion-card>
+		<ion-card-header>
+		<h1>Project Two</h1><br>
+			Sign In
+		</ion-card-header>
+		<ion-card-content>
+			<ion-list no-line>
+				<ion-item>
+				
+					 <ion-input type="text" placeholder="Username" [(ngModel)]="user.email"></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-input type="password" placeholder="Password" [(ngModel)]="user.password"></ion-input>
+				</ion-item>
+				<a (click)="passwordreset()">Forgot your login detail? <b>Get help signing in</b></a>
+				<button ion-button block outline color="light" (click)="loginUser()">Sign in</button>
+				<p>OR</p>
+				<button class="fb" ion-button block color="facebook" (click)="loginwithfacebook()">
+					<ion-icon name="logo-facebook" ></ion-icon>Sign in with facebook
+				</button>
+				<button class="google" ion-button block (click)="loginwithgoogle()" >
+					<ion-icon name="logo-googleplus"></ion-icon>Sign in with Google+
+				</button>
+				
+			</ion-list>
+		</ion-card-content>
+	</ion-card>
+	<button class="bottom" ion-button clear full color="light" (click)="signup()">Don't have an account? Sign up</button>
+</ion-content>
