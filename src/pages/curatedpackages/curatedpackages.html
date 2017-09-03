@@ -1,0 +1,23 @@
+<ion-header no-shadow no-border>
+  <ion-navbar>
+
+    <ion-title>
+	 Project Two
+	   <ion-icon name="cart" style="float:right"></ion-icon>
+	</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content no-bounce>
+  <super-tabs id="mainTabs" [config]="{ sideMenu: 'left' }" scrollTabs toolbarColor="light"  indicatorColor="yellow" badgeColor="yellow" (tabSelect)="onTabSelect($event)">
+    <super-tab [swipeBackEnabled]="false" [root]="studyroom" [title]="showTitles? 'StudyRoom' : ''" [icon]="showIcons? 'home': ''" id="page1"></super-tab>
+    <super-tab [root]="bedroom" badge="5" [title]="showTitles? 'Bedroom' : ''" [icon]="showIcons? 'trending-up' : ''" id="page2"></super-tab>
+    <super-tab [root]="dinningroom" [title]="showTitles? 'Dinning Room' : ''" [icon]="showIcons? 'heart' : ''" id="page3"></super-tab>
+    <super-tab [root]="studyroom" [title]="showTitles? 'StudyRoom' : ''" [icon]="showIcons? 'flame': ''" id="page4"></super-tab>
+    <super-tab [root]="bedroom" [title]="showTitles? 'Bedroom' : ''" [icon]="showIcons? 'pin' : ''" id="page5"></super-tab>
+    <super-tab [root]="livingroom" [title]="showTitles? 'LivingRoom' : ''" [icon]="showIcons? 'analytics' : ''" id="page6"></super-tab>
+
+
+    <!-- more tabs for testing -->
+ 
+  </super-tabs>
+</ion-content>

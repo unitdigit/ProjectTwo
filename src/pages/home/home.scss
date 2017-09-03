@@ -1,6 +1,26 @@
 page-home {
+	.bar-buttons-md {
+		float:left;
+	}
+	ion-title {
+		
+	}
+	.toolbar-background-ios ,.toolbar-background-md {
+		background-color:transparent;
+		border:0px;
+	}
+	.toolbar-title-ios,.toolbar-title-md {
+		color:#000000;
+		font-weight:normal;
+		text-align:left;
+	}
+	.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default{
+		color:#000000;
+	}
+	.content-md {
+		background-color:rgba(216, 205, 205, 0.41);
+	}
 
-}
 .card-background-page {
 
   ion-card {
@@ -8,7 +28,8 @@ page-home {
     text-align: center;
   }
 ion-card img {
-opacity:0.5;
+	width:auto;
+	margin:auto;
 }
   .card-title {
     position: absolute;
@@ -27,4 +48,5 @@ opacity:0.5;
     color: #96354d;;
   }
 
+}
 }
