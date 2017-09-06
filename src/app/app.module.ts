@@ -19,6 +19,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { SuperTabsModule } from 'ionic2-super-tabs';
+import { ItemdescriptionPage } from '../pages/itemdescription/itemdescription';
  var config = {
     apiKey: "AIzaSyDGUcsjv-Yt4B6rJ1SqjydnUhPcYEe8HKA",
     authDomain: "rentapp-76a39.firebaseapp.com",
@@ -36,7 +37,7 @@ import { SuperTabsModule } from 'ionic2-super-tabs';
 	StudyroomPage,
 	BedroomPage,
 	DinningroomPage,
-	LivingroomPage 
+	LivingroomPage,ItemdescriptionPage
   ],
   imports: [
     BrowserModule,
@@ -51,7 +52,7 @@ import { SuperTabsModule } from 'ionic2-super-tabs';
     HomePage,SigninPage,SignupPage,LocationPage,PasswordresetPage,CuratedpackagesPage,StudyroomPage,
 		BedroomPage,
 	DinningroomPage,
-	LivingroomPage
+	LivingroomPage,ItemdescriptionPage
   ],
   providers: [
     StatusBar,

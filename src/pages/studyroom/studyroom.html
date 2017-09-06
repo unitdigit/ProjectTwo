@@ -8,32 +8,32 @@
 
 
 <ion-content padding>
-	<ion-card (click)="openPage($event.target)" >
-	  <img src="../assets/studyroom_1.jpg"/>
+	<ion-card>
+	  <img src="../assets/studyroom_1.jpg"  (click)="openPage($event)"/>
 	  <ion-card-content>
-		<div class="card-description"><strong>Lorem ipsum</strong> </div>
+		<div desc class="card-description">Lorem ipsum 1 </div>
 		<div><strong>$200</strong> per month<ion-icon name="heart-outline" style="float:right"></ion-icon></div>
 	  </ion-card-content>
 	</ion-card>
-		<ion-card (click)="openPage($event.target)" >
-	  <img src="../assets/livingroom_2.jpg"/>
+		<ion-card>
+	  <img src="../assets/livingroom_2.jpg" (click)="openPage($event)" >
 	  <ion-card-content>
-		<div class="card-description"><strong>Lorem ipsum 1</strong> </div>
+		<div desc class="card-description">Lorem ipsum 2 </div>
 		<div><strong>$250</strong> per month<ion-icon name="heart-outline" style="float:right"></ion-icon></div>
 	  </ion-card-content>
 	</ion-card>
-		<ion-card (click)="openPage($event.target)" >
-	  <img src="../assets/livingroom_1.jpg"/>
+		<ion-card>
+	  <img src="../assets/livingroom_1.jpg" (click)="openPage($event)">
 	  <ion-card-content>
-		<div class="card-description"><strong>Lorem ipsum 2</strong> </div>
-		<div><strong>$250</strong> per month<ion-icon name="heart-outline" style="float:right"></ion-icon></div>
+		<div desc class="card-description">Lorem ipsum 3</div>
+		<div><strong>$350</strong> per month<ion-icon name="heart-outline" style="float:right"></ion-icon></div>
 	  </ion-card-content>
 	</ion-card>
-		<ion-card (click)="openPage($event.target)" >
-	  <img src="../assets/livingroom_2.jpg"/>
+		<ion-card>
+	  <img src="../assets/livingroom_2.jpg" (click)="openPage($event)">
 	  <ion-card-content>
-		<div class="card-description"><strong>Lorem ipsum 3</strong> </div>
-		<div><strong>$250</strong> per month<ion-icon name="heart-outline" style="float:right"></ion-icon></div>
+		<div desc class="card-description">Lorem ipsum 4</div>
+		<div><strong>$450</strong> per month<ion-icon name="heart-outline" style="float:right"></ion-icon></div>
 	  </ion-card-content>
 	</ion-card>
 </ion-content>
